@@ -2,22 +2,14 @@ import 'package:library_books/domain/entities/book.dart';
 
 class BookModel extends Book {
   BookModel({
-    int? id,
-    required String title,
-    required String shortDescription,
-    required double rating,
-    required int publishingHouseId,
-    bool isFavorite = false,
-    String? coverImagePath,
-  }) : super(
-          id: id,
-          title: title,
-          shortDescription: shortDescription,
-          rating: rating,
-          publishingHouseId: publishingHouseId,
-          isFavorite: isFavorite,
-          coverImagePath: coverImagePath,
-        );
+    super.id,
+    required super.title,
+    required super.shortDescription,
+    required super.rating,
+    required super.publishingHouseId,
+    super.isFavorite = false,
+    super.coverImagePath,
+  });
 
   factory BookModel.fromMap(Map<String, dynamic> map) {
     return BookModel(

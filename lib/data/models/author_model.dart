@@ -6,7 +6,7 @@ class AuthorModel extends Author {
     required super.name,
     required super.hometown,
     required super.birthdate,
-    String? profileImagePath,
+    super.profileImagePath,
   });
 
   factory AuthorModel.fromMap(Map<String, dynamic> map) {

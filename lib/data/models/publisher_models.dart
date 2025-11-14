@@ -2,16 +2,11 @@ import 'package:library_books/domain/entities/publisher.dart';
 
 class PublisherModel extends Publisher {
   PublisherModel({
-    int? id,
-    required String title,
-    required String address,
-    required String phone,
-  }) : super(
-          id: id,
-          title: title,
-          address: address,
-          phone: phone,
-        );
+    required super.id,
+    required super.title,
+    required super.address,
+    required super.phone,
+  });
 
   /// convert from map (SQLite → Model)
   factory PublisherModel.fromMap(Map<String, dynamic> map) {
