@@ -1,4 +1,4 @@
-import 'package:library_books/domain/entities/book.dart';
+import 'package:library_books/features/books/domain/entities/book.dart';
 
 class BookModel extends Book {
   BookModel({
@@ -35,3 +35,4 @@ class BookModel extends Book {
     };
   }
 }
+

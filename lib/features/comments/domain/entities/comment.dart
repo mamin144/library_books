@@ -17,3 +17,4 @@ class Comment {
     this.dislikes = 0,
   });
 }
+

@@ -13,3 +13,4 @@ class Author {
     this.profileImagePath,
   });
 }
+

@@ -1,8 +1,8 @@
-import 'package:library_books/domain/entities/publisher.dart';
+import 'package:library_books/features/publishers/domain/entities/publisher.dart';
 
 class PublisherModel extends Publisher {
   PublisherModel({
-    required super.id,
+    super.id,
     required super.title,
     required super.address,
     required super.phone,
@@ -28,3 +28,4 @@ class PublisherModel extends Publisher {
     };
   }
 }
+

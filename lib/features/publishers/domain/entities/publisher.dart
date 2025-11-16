@@ -11,3 +11,4 @@ class Publisher {
     required this.phone,
   });
 }
+

@@ -1,4 +1,4 @@
-import 'package:library_books/domain/entities/comment.dart';
+import 'package:library_books/features/comments/domain/entities/comment.dart';
 
 class CommentModel extends Comment {
   CommentModel({
@@ -35,3 +35,4 @@ class CommentModel extends Comment {
     };
   }
 }
+

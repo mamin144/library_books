@@ -1,5 +1,5 @@
-import 'package:library_books/data/models/book_models.dart';
-import 'database_helper.dart';
+import 'package:library_books/features/books/data/models/book_models.dart';
+import 'package:library_books/core/database/database_helper.dart';
 
 class BookDao {
   final dbHelper = DatabaseHelper();
@@ -26,3 +26,4 @@ class BookDao {
     return await db.delete('books', where: 'id = ?', whereArgs: [id]);
   }
 }
+

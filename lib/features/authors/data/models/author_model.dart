@@ -1,4 +1,4 @@
-import 'package:library_books/domain/entities/author.dart';
+import 'package:library_books/features/authors/domain/entities/author.dart';
 
 class AuthorModel extends Author {
   AuthorModel({
@@ -29,3 +29,4 @@ class AuthorModel extends Author {
     };
   }
 }
+

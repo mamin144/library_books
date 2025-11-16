@@ -1,4 +1,4 @@
-import 'package:library_books/data/models/book_models.dart';
+import 'package:library_books/features/books/data/models/book_models.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
 
@@ -102,3 +102,4 @@ class LocalDatabase {
     return await db.delete('books', where: 'id = ?', whereArgs: [id]);
   }
 }
+

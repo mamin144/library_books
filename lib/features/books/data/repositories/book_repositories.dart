@@ -1,14 +1,19 @@
-import 'package:library_books/data/datasources/local_database.dart';
-import 'package:library_books/data/models/book_models.dart';
+import 'package:library_books/features/books/data/datasources/local_database.dart';
+import 'package:library_books/features/books/data/models/book_models.dart';
 
 class BookRepository {
   /// ✅ جلب كل الكتب من قاعدة البيانات
+  // Future<List<BookModel>> getAllBooks() async {
+  //   final books = await LocalDatabase.getAllBooks();
+  //   return books;
+  // }
   Future<List<BookModel>> getAllBooks() async {
-    final books = await LocalDatabase.getAllBooks();
-    return books;
+    final db = await LocalDatabase.database;
+    final result = await db.query('books');
+    return List.generate(result.length, (i) => BookModel.fromMap(result[i]));
   }
 
-  /// ✅ إضافة كتاب جديد
+  /// ✅ إضافة كتاب جديد إلى قاعدة البيانات
   Future<void> addBook(BookModel book) async {
     await LocalDatabase.insertBook(book);
   }
