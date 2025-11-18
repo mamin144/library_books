@@ -16,7 +16,6 @@ dependencies:
   path: ^1.8.2
   intl: ^0.17.0
   cupertino_icons: ^1.0.2
-  img_picker: ^0.8.6+3
 
 
 dev_dependencies:
